@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* Makes dealing with widths easier */
+* ::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2f303a;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.brand-logo-name {
+    margin-left: 1rem;
+}
+
+/* Remove default padding and margin from nav elements */
+.nav-bar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-bar a {
+    color: inherit;
+    text-decoration: none;
+}
