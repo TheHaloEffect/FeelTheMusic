@@ -12,6 +12,14 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     color: white;
+    min-height: 100vh;
+}
+
+.full-height-img {
+    display: flex;
+    flex-direction: column;
+    /* Ensures the container grows to reach the bottom of the screen*/
+    flex-grow: 1;
 }
 
 .brand-logo {
@@ -37,4 +45,91 @@ body {
 .nav-bar a {
     color: inherit;
     text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-bar a:hover {
+    color: #adadad;
+}
+
+/* Ensures nav elements are aligned nicely */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+/* The body will keep everything in the center even past 1200px */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: white;
+    background-color: #1762a7;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Will allow the image to be pushed down to the bottom */
+.img-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.lady-img {
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.call-to-action {
+    display: flex;
+    /* To align elements top to bottom */
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+    .img-wrapper {
+        display: none;
+    }
+
+    .main-section {
+        justify-content: center;
+    }
 }
